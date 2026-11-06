@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cam-Renting – Transport & pakketlevering in Leuven en Antwerpen</title>
-  <meta name="description" content="Cam-Renting verzorgt pakketlevering en transport voor PostNL, bpost en Colis Privé in Leuven en Antwerpen, met bestelwagens, elektrische voertuigen en een 20 m³ camion.">
+  <title>Cam-Renting – Transport en pakketlevering in Leuven en Antwerpen</title>
+  <meta name="description" content="Cam-Renting rijdt dagelijks voor PostNL, bpost en Colis Privé in Leuven en Antwerpen, met bestelwagens, elektrische voertuigen en een camion van 20 m³.">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -13,10 +13,10 @@
 <header class="site-header">
   <div class="wrap bar">
     <a class="brand" href="index.html" aria-label="Cam-Renting">
-      <img src="logo.svg" alt="" width="56" height="29">
+      <img src="logo.svg" alt="" width="55" height="28">
       <span>Cam-Renting</span>
     </a>
-    <button class="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="nav">☰</button>
+    <button class="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="nav" data-i18n="nav.menu">Menu</button>
     <nav id="nav">
       <a href="index.html" class="active" data-i18n="nav.home">Home</a>
       <a href="fleet.html" data-i18n="nav.fleet">Onze vloot</a>
@@ -31,69 +31,84 @@
 
 <main>
   <section class="hero">
-    <div class="wrap hero-inner">
-      <div>
-        <p class="eyebrow" data-i18n="hero.eyebrow">Transport & pakketlevering · Leuven · Antwerpen</p>
-        <h1 data-i18n="hero.title">Uw pakketten, op tijd en betrouwbaar geleverd.</h1>
-        <p class="lead" data-i18n="hero.lead">Cam-Renting is een Belgisch transportbedrijf. Dagelijks rijden onze chauffeurs en voertuigen voor PostNL, bpost en Colis Privé.</p>
-        <div class="cta">
-          <a class="btn primary" href="contact.html" data-i18n="hero.cta1">Neem contact op</a>
-          <a class="btn ghost" href="fleet.html" data-i18n="hero.cta2">Bekijk onze vloot</a>
-        </div>
+    <img class="mark" src="logo.svg" alt="">
+    <div class="wrap">
+      <p class="label" data-i18n="hero.eyebrow">Leuven · Antwerpen</p>
+      <h1 data-i18n="hero.title">Transport en pakketlevering in Leuven en Antwerpen.</h1>
+      <p class="lead" data-i18n="hero.lead">Cam-Renting rijdt dagelijks voor PostNL, bpost en Colis Privé, met bestelwagens, elektrische voertuigen en een camion van 20 m³.</p>
+      <div class="cta">
+        <a class="btn light" href="contact.html" data-i18n="hero.cta1">Neem contact op</a>
+        <a class="link" href="fleet.html" data-i18n="hero.cta2">Onze vloot</a>
       </div>
-      <ul class="stats" aria-label="Cam-Renting">
-        <li><strong>3</strong><span data-i18n="stats.clients">partners: PostNL, bpost, Colis Privé</span></li>
-        <li><strong>2</strong><span data-i18n="stats.cities">regio’s: Leuven & Antwerpen</span></li>
-        <li><strong>EV</strong><span data-i18n="stats.ev">elektrische voertuigen in onze vloot</span></li>
-      </ul>
+    </div>
+  </section>
+
+  <section class="clients">
+    <div class="wrap">
+      <p class="label" data-i18n="clients.label">Wij rijden voor</p>
+      <ul><li>PostNL</li><li>bpost</li><li>Colis Privé</li></ul>
     </div>
   </section>
 
   <section class="section">
     <div class="wrap">
-      <h2 data-i18n="services.title">Onze diensten</h2>
-      <div class="grid three">
-        <article class="card">
-          <div class="ico">📦</div>
+      <div class="section-head">
+        <p class="label"><b>01</b><span data-i18n="services.label">Diensten</span></p>
+        <h2 data-i18n="services.title">Wat we voor onze partners doen.</h2>
+      </div>
+      <div class="cols">
+        <div class="col">
           <h3 data-i18n="services.s1t">Pakketlevering</h3>
           <p data-i18n="services.s1d">Dagelijkse leveringen aan huis en aan bedrijven, voor PostNL, bpost en Colis Privé.</p>
-        </article>
-        <article class="card">
-          <div class="ico">🚛</div>
+        </div>
+        <div class="col">
           <h3 data-i18n="services.s2t">Palletvervoer</h3>
-          <p data-i18n="services.s2d">Met onze 20 m³ camion voeren we pallets voor Colis Privé aan en af naar het depot in Leuven.</p>
-        </article>
-        <article class="card">
-          <div class="ico">⚡</div>
-          <h3 data-i18n="services.s3t">Elektrisch en stedelijk</h3>
-          <p data-i18n="services.s3d">Onze elektrische voertuigen rijden stil en uitstootvrij door de steden Leuven en Antwerpen.</p>
-        </article>
+          <p data-i18n="services.s2d">Met onze camion van 20 m³ voeren we pallets voor Colis Privé aan en af naar het depot in Leuven.</p>
+        </div>
+        <div class="col">
+          <h3 data-i18n="services.s3t">Elektrisch in de stad</h3>
+          <p data-i18n="services.s3d">Elektrische bestelwagens voor leveringen in Leuven en Antwerpen.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="section alt">
-    <div class="wrap partners">
-      <h2 data-i18n="partners.title">We rijden voor</h2>
+  <section class="section">
+    <div class="wrap teaser">
+      <div>
+        <p class="label"><b>02</b><span data-i18n="fleet.label">Vloot</span></p>
+        <h2 data-i18n="fleet.teaser">Het juiste voertuig voor elke opdracht.</h2>
+        <a class="link" href="fleet.html" data-i18n="fleet.all">Bekijk de volledige vloot</a>
+      </div>
       <ul>
-        <li>PostNL</li><li>bpost</li><li>Colis Privé</li>
+        <li><b>Mercedes</b> <span>PostNL</span></li>
+        <li><b data-i18n="fleet.v2t">Vrachtwagens</b> <span>bpost</span></li>
+        <li><b>Townstar EV 2026</b> <span>Colis Privé</span></li>
+        <li><b>Maxus eDeliver</b> <span>Colis Privé</span></li>
+        <li><b>20 m³</b> <span>Colis Privé</span></li>
       </ul>
-      <p><a class="btn dark" href="partners.html" data-i18n="partners.more">Meer over onze partners</a></p>
     </div>
   </section>
 
-  <section class="band">
-    <div class="wrap band-inner">
+  <section class="cta-band">
+    <div class="wrap">
       <h2 data-i18n="band.title">Een vraag of een opdracht?</h2>
-      <a class="btn dark" href="contact.html" data-i18n="band.cta">Contacteer ons</a>
+      <a class="btn light" href="contact.html" data-i18n="band.cta">Contacteer ons</a>
     </div>
   </section>
 </main>
 
 <footer class="site-footer">
   <div class="wrap foot">
-    <p>© <span id="year"></span> Cam-Renting · cam-renting.be</p>
-    <p><a href="contact.html" data-i18n="nav.contact">Contact</a></p>
+    <div>
+      <img src="logo.svg" alt="Cam-Renting" width="66" height="34">
+      <p>© <span id="year"></span> Cam-Renting · cam-renting.be</p>
+    </div>
+    <nav>
+      <a href="fleet.html" data-i18n="nav.fleet">Onze vloot</a>
+      <a href="partners.html" data-i18n="nav.partners">Onze partners</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact</a>
+    </nav>
   </div>
 </footer>
 
