@@ -1,39 +1,102 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cam-Renting | Professional Transport & Logistics</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cam-Renting – Transport & pakketlevering in Leuven en Antwerpen</title>
+  <meta name="description" content="Cam-Renting verzorgt pakketlevering en transport voor PostNL, bpost en Colis Privé in Leuven en Antwerpen, met bestelwagens, elektrische voertuigen en een 20 m³ camion.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo"><strong>Cam-Renting</strong></div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="fleet.html">Our Fleet</a></li>
-                <li><a href="partners.html">Our Partners</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section class="hero">
-            <h1>Reliable B2B Transport & Logistics</h1>
-            <p>Delivering excellence across Belgium for top logistics networks including PostNL, Bpost, and Colis Privé.</p>
-            <a href="contact.html" class="button">Get in Touh</a>
-        </section>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="index.html" aria-label="Cam-Renting">
+      <img src="logo.svg" alt="" width="56" height="29">
+      <span>Cam-Renting</span>
+    </a>
+    <button class="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="nav">☰</button>
+    <nav id="nav">
+      <a href="index.html" class="active" data-i18n="nav.home">Home</a>
+      <a href="fleet.html" data-i18n="nav.fleet">Onze vloot</a>
+      <a href="partners.html" data-i18n="nav.partners">Onze partners</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact</a>
+      <div class="lang" role="group" aria-label="Taal / Langue / Language">
+        <button data-lang="nl">NL</button><button data-lang="fr">FR</button><button data-lang="en">EN</button>
+      </div>
+    </nav>
+  </div>
+</header>
 
-        <section class="overview">
-            <h2>Driving the Future of Delivery</h2>
-            <p>From sustainable last-mile delivery in city centers to heavy pallet transport, we have the network and the vehicles to keep your supply chain moving. Operating heavily in Antwerp and Leuven, we deploy a modern fleet of 100% electric vans and high-capacity trucks tailored to our partners' specific depot needs.</p>
-        </section>
-    </main>
+<main>
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div>
+        <p class="eyebrow" data-i18n="hero.eyebrow">Transport & pakketlevering · Leuven · Antwerpen</p>
+        <h1 data-i18n="hero.title">Uw pakketten, op tijd en betrouwbaar geleverd.</h1>
+        <p class="lead" data-i18n="hero.lead">Cam-Renting is een Belgisch transportbedrijf. Dagelijks rijden onze chauffeurs en voertuigen voor PostNL, bpost en Colis Privé.</p>
+        <div class="cta">
+          <a class="btn primary" href="contact.html" data-i18n="hero.cta1">Neem contact op</a>
+          <a class="btn ghost" href="fleet.html" data-i18n="hero.cta2">Bekijk onze vloot</a>
+        </div>
+      </div>
+      <ul class="stats" aria-label="Cam-Renting">
+        <li><strong>3</strong><span data-i18n="stats.clients">partners: PostNL, bpost, Colis Privé</span></li>
+        <li><strong>2</strong><span data-i18n="stats.cities">regio’s: Leuven & Antwerpen</span></li>
+        <li><strong>EV</strong><span data-i18n="stats.ev">elektrische voertuigen in onze vloot</span></li>
+      </ul>
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2026 Cam-Renting. All rights reserved.</p>
-    </footer>
+  <section class="section">
+    <div class="wrap">
+      <h2 data-i18n="services.title">Onze diensten</h2>
+      <div class="grid three">
+        <article class="card">
+          <div class="ico">📦</div>
+          <h3 data-i18n="services.s1t">Pakketlevering</h3>
+          <p data-i18n="services.s1d">Dagelijkse leveringen aan huis en aan bedrijven, voor PostNL, bpost en Colis Privé.</p>
+        </article>
+        <article class="card">
+          <div class="ico">🚛</div>
+          <h3 data-i18n="services.s2t">Palletvervoer</h3>
+          <p data-i18n="services.s2d">Met onze 20 m³ camion voeren we pallets voor Colis Privé aan en af naar het depot in Leuven.</p>
+        </article>
+        <article class="card">
+          <div class="ico">⚡</div>
+          <h3 data-i18n="services.s3t">Elektrisch en stedelijk</h3>
+          <p data-i18n="services.s3d">Onze elektrische voertuigen rijden stil en uitstootvrij door de steden Leuven en Antwerpen.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="wrap partners">
+      <h2 data-i18n="partners.title">We rijden voor</h2>
+      <ul>
+        <li>PostNL</li><li>bpost</li><li>Colis Privé</li>
+      </ul>
+      <p><a class="btn dark" href="partners.html" data-i18n="partners.more">Meer over onze partners</a></p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap band-inner">
+      <h2 data-i18n="band.title">Een vraag of een opdracht?</h2>
+      <a class="btn dark" href="contact.html" data-i18n="band.cta">Contacteer ons</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap foot">
+    <p>© <span id="year"></span> Cam-Renting · cam-renting.be</p>
+    <p><a href="contact.html" data-i18n="nav.contact">Contact</a></p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>

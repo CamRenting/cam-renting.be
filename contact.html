@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact – Cam-Renting</title>
+  <meta name="description" content="Contacteer Cam-Renting voor transport en pakketlevering in Leuven en Antwerpen.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="index.html" aria-label="Cam-Renting">
+      <img src="logo.svg" alt="" width="56" height="29">
+      <span>Cam-Renting</span>
+    </a>
+    <button class="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="nav">☰</button>
+    <nav id="nav">
+      <a href="index.html" data-i18n="nav.home">Home</a>
+      <a href="fleet.html" data-i18n="nav.fleet">Onze vloot</a>
+      <a href="partners.html" data-i18n="nav.partners">Onze partners</a>
+      <a href="contact.html" class="active" data-i18n="nav.contact">Contact</a>
+      <div class="lang" role="group" aria-label="Taal / Langue / Language">
+        <button data-lang="nl">NL</button><button data-lang="fr">FR</button><button data-lang="en">EN</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-title">
+    <div class="wrap">
+      <h1 data-i18n="contact.title">Contact</h1>
+      <p class="lead" data-i18n="contact.lead">Stuur ons een bericht of bel ons. We antwoorden zo snel mogelijk.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap contact-grid">
+
+      <div class="card info">
+        <h2 data-i18n="contact.details">Onze gegevens</h2>
+        <dl>
+          <dt data-i18n="contact.company">Bedrijf</dt>
+          <dd>Cam-Renting</dd>
+
+          <dt data-i18n="contact.phone">Telefoon</dt>
+          <dd><a data-contact="phone" href="#">—</a></dd>
+
+          <dt>E-mail</dt>
+          <dd><a data-contact="email" href="#">—</a></dd>
+
+          <dt data-i18n="contact.area">Werkgebied</dt>
+          <dd>Leuven · Antwerpen</dd>
+
+          <dt data-i18n="contact.web">Website</dt>
+          <dd>cam-renting.be</dd>
+        </dl>
+      </div>
+
+      <form class="card form" id="contact-form" novalidate>
+        <h2 data-i18n="contact.formTitle">Stuur een bericht</h2>
+
+        <label for="name" data-i18n="form.name">Naam</label>
+        <input id="name" name="name" type="text" autocomplete="name" required>
+
+        <label for="email" data-i18n="form.email">Uw e-mailadres</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+
+        <label for="phone" data-i18n="form.phone">Telefoon (optioneel)</label>
+        <input id="phone" name="phone" type="tel" autocomplete="tel">
+
+        <label for="message" data-i18n="form.message">Bericht</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button class="btn primary" type="submit" data-i18n="form.send">Verstuur</button>
+        <p class="note" id="form-note" role="status"></p>
+      </form>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap foot">
+    <p>© <span id="year"></span> Cam-Renting · cam-renting.be</p>
+    <p><a href="index.html" data-i18n="nav.home">Home</a></p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
